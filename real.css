@@ -1,32 +1,29 @@
-
-#grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    font-size: 25px;
-}
-
-#grid .edge {
-    border-right: 1px black solid;
-    padding: 10px;
+.nav {
+    display: flex;
+    background-color: greenyellow;
+    height: 80px;
     text-align: center;
+    
 }
-
-h1 {
-    display: inline;
+.item{
+    flex-basis: 500px;
+    flex-shrink: 1;
+    padding-top: 25px;
+    border-bottom: 3px solid #B9C2C8;
 }
-
-#change:hover {
-    color: aqua;
-    transition: color .2s;
-}
-
-#grid a {
+.nav .item{
+    background-color: white;
     display: block;
-    padding: 50px;
-    text-decoration-line: none;
+    text-decoration: none;
+    color: #49A4E7;
+    font-size: 30px;
 }
 
-#grid #change {
-    display: block;
-    padding: 50px;
+.nav .item:hover {
+    color: #124DE6;
+    transition: .2s;
+}
+.holy-item{
+    display:flex;
+    flex-direction: column;
 }
