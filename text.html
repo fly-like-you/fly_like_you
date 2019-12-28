@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .nav {
+            display: flex;
+        }
+
+        .nav .nav-bar {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .nav a {
+            background-color: gray;
+            display: block;
+
+            text-decoration: none;
+            color: aqua;
+        }
+
+        .nav a:hover {
+            background-color: white;
+            transition: .9s;
+        }
+
+        .nav-bar:nth-child(1){
+            width: 300px;
+        }
+        .nav-bar:nth-child(2){
+            flex:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="asds" id="logo">리마인더</a>
+        <div class="nav-bar">
+            <a href="asd">인원</a>
+            <a href="asda">일정관리</a>
+            <a href="asaa">현황</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
