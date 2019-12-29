@@ -23,7 +23,39 @@
     color: #124DE6;
     transition: .2s;
 }
-.holy-item{
+.holy{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    border-top: 3px solid #B9C2C8;
+    background-color: pink;
+    
+}
+
+.empty{
+    flex-basis: 10px;
+    flex-grow: 1;
+    border-right: 6px solid #B9C2C8;
+    flex-shrink: 0;
+}
+main{
+    flex-basis: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.holy-item{
+    border-right: 6px solid #B9C2C8;
+    flex-grow: 3;
+    
+
+}
+
+
+.bottom{
+    flex-direction: column-reverse;
+    border-top: 3px solid #B9C2C8;
+}
+.holy ol{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
 }
