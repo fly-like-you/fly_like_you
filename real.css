@@ -1,6 +1,5 @@
 .nav {
     display: flex;
-    background-color: greenyellow;
     height: 80px;
     text-align: center;
     
@@ -9,32 +8,37 @@
     flex-basis: 500px;
     flex-shrink: 1;
     padding-top: 25px;
-    border-bottom: 3px solid #B9C2C8;
+ 
 }
+#logo{
+    font-weight: 900;
+    font-size: 40px;
+    color: rgba(56, 62, 104, 0.479);
+    letter-spacing: -3px;
+}
+
 .nav .item{
     background-color: white;
     display: block;
     text-decoration: none;
-    color: #49A4E7;
+    color : rgba(56, 62, 104, 0.479);
     font-size: 30px;
 }
 
-.nav .item:hover {
+.nav .item:hover > b{
     color: #124DE6;
-    transition: .2s;
+    transition: .5s;
 }
 .holy{
     display:flex;
     flex-direction: row;
-    border-top: 3px solid #B9C2C8;
-    background-color: pink;
+    border-top: 1px solid #B9C2C8;
     
 }
 
 .empty{
     flex-basis: 10px;
     flex-grow: 1;
-    border-right: 6px solid #B9C2C8;
     flex-shrink: 0;
 }
 main{
@@ -43,7 +47,7 @@ main{
     flex-shrink: 0;
 }
 .holy-item{
-    border-right: 6px solid #B9C2C8;
+    border-right: 1px solid #B9C2C8;
     flex-grow: 3;
     
 
@@ -52,7 +56,7 @@ main{
 
 .bottom{
     flex-direction: column-reverse;
-    border-top: 3px solid #B9C2C8;
+    border-top: 1px solid #B9C2C8;
 }
 .holy ol{
     display: flex;
