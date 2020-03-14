@@ -1,0 +1,85 @@
+.nav {
+    display: flex;
+    height: 80px;
+    text-align: center;
+    
+}
+.item{
+    flex-basis: 500px;
+    flex-shrink: 1;
+    padding-top: 25px;
+ 
+}
+#logo{
+    font-weight: 900;
+    font-size: 40px;
+    color: rgba(56, 62, 104, 0.479);
+    letter-spacing: -3px;
+}
+
+.nav .item{
+    background-color: white;
+    display: block;
+    text-decoration: none;
+    color : rgba(56, 62, 104, 0.479);
+    font-size: 30px;
+}
+
+.nav .item:hover > b{
+    color: #124DE6;
+    transition: .5s;
+}
+.nav :hover{
+    color: #124DE6;
+    transition: .5s;
+}
+.holy{
+    display:flex;
+    flex-direction: row;
+    border-top: 1px solid #B9C2C8;
+    
+}
+
+.empty{
+    flex-basis: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+main{
+    flex-basis: 10px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.holy-item{
+    border-right: 1px solid #B9C2C8;
+    flex-grow: 3;
+    
+
+}
+
+
+.bottom{
+    flex-direction: column-reverse;
+    border-top: 1px solid #B9C2C8;
+}
+.holy ol{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+}
+
+div.members{
+    padding: 20px;
+    border-bottom: 1px solid silver;
+    margin: 10px;
+}
+
+div.holy{
+    padding-bottom: 30px;
+    border-bottom: 1px solid silver;
+
+}
+.toggle{
+    border-bottom: 3px solid silver;
+    padding-bottom:30px;
+}
