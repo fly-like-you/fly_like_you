@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remind-memo</title>
+    <link rel="stylesheet" href="memo.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="text.html" class="item" id="logo"><b>RE</b>MINDER</a>
+        <a href="asd" class="item">인원</a>
+        <a href="memo.html" class="item">메모</a>
+        <a href="asaa" class="item">현황</a>
+    </div>
+    <div class="holy">
+        <p class="explain">아래 레터박스에 메모할 내용을 적은 뒤 Enter키를 누르면 자동으로 등록됩니다. 
+            완료버튼을 누르면 완료탭에 들어가며 3일 뒤 자동삭제 됩니다.</p>
+
+        <input type="text" placeholder="엔터키를 누르시면 자동으로 등록됩니다." id="memo-input" onkeyup="enterkey();">
+        <div id="memos"></div>
+    </div>
+    <footer class="bottom">&copy; Copyright 2020 flylikeyou.</footer>
+</body>
+<script>
+    function enterkey(){
+        if(event.keyCode === 13){
+            /*
+           let hoho = document.querySelector('#memo-input');
+           let li = document.createElement('li');
+           let fun_text = document.createTextNode(hoho.value);
+           li.appendChild(fun_text);
+           let target = document.querySelector('#memos');
+           1. 입력받은값을 local~에 저장
+           2. inner을 이용하여 표시
+           */
+           let a = document.querySelector('#memo-input'); //메모가져오기
+           let b = document.createElement('li'); //li 태그 생성
+           let c = localStorage.setItem('memo1', a.value); //로컬에 저장
+           let e = localStorage.getItem('memo1');
+           let d = document.createTextNode('memo1'); //로
+
+           b.appendChild(e); // <li>메모내용</li>
+           a.appendChild(b);
+
+
+        }
+
+    }
+
+
+</script>
+
+
+</html>

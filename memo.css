@@ -1,3 +1,7 @@
+
+body {
+    font-family: "Malgun Gothic", "굴림", "Gulim", "Arial"; 
+}
 .nav {
     display: flex;
     height: 80px;
@@ -35,8 +39,10 @@
 }
 .holy{
     display:flex;
-    flex-direction: row;
+    flex-direction:column;
     border-top: 1px solid #B9C2C8;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -82,4 +88,30 @@ div.holy{
 .toggle{
     border-bottom: 3px solid silver;
     padding-bottom:30px;
+}
+
+#memo-input{
+    display: inline;
+}
+
+.explain{
+    width: 560px;
+    text-align: center;
+    vertical-align: middle;
+    display:inline;
+
+}
+
+input::placeholder{
+    font-size: 20px;
+    text-align: center;
+}
+input{
+    width:600px;
+    height: 120px;
+    font-size : 30px;
+    text-align: center;
+    border: 8px solid silver;
+    border-radius: 15px;
+
 }
