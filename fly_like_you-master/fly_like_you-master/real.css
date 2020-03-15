@@ -29,6 +29,10 @@
     color: #124DE6;
     transition: .5s;
 }
+.nav :hover{
+    color: #124DE6;
+    transition: .5s;
+}
 .holy{
     display:flex;
     flex-direction: row;
@@ -62,4 +66,20 @@ main{
     display: flex;
     flex-direction: row-reverse;
     padding-right: 30px;
+}
+
+div.members{
+    padding: 20px;
+    border-bottom: 1px solid silver;
+    margin: 10px;
+}
+
+div.holy{
+    padding-bottom: 30px;
+    border-bottom: 1px solid silver;
+
+}
+.toggle{
+    border-bottom: 3px solid silver;
+    padding-bottom:30px;
 }

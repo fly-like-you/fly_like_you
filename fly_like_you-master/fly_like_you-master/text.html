@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Remind</title>
+    <link rel="stylesheet" href="real.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="text.html" class="item" id="logo"><b>RE</b>MINDER</a>
+        <a href="asd" class="item">인원</a>
+        <a href="memo.html" class="item">메모</a>
+        <a href="asaa" class="item">현황</a>
+    </div>
+    <div class="holy">
+        <div class="empty"></div>
+        <aside class="holy-item">
+            <form>
+                <span>업데이트<input type="text" placeholder="띄어쓰기로 구분" id="date"></span>
+                <span>하기<input type="button" id="activ"></span>
+            </form>
+            <div class="auto-in">
+                <div class="members">
+                    <span class="members name">박준호</span>
+                    <span class="members number">19-70007046</span>
+                    <span class="members which">부산 수영</span>
+                </div>
+                <div class="members">
+                    <span class="members name">홍길동</span>
+                    <span class="members number">20-70012321</span>
+                    <span class="members which">대구</span>
+                </div>
+        </aside>
+        <main>인원</main>
+    </div>
+    <footer class="bottom">&copy; Copyright 2020 flylikeyou.</footer>
+</body>
+<script>
+
+    let s = document.querySelector('#activ');
+    s.addEventListener('click', function (event) {
+
+        let t = document.querySelector('#date').value;
+        let split = t.split(' ');
+        document.querySelector('.auto-in').innerHTML =
+        '<div class="members"><span class="members name">'+ split[0] +'</span>'+
+        '<span class="members number">'+ split[1] +'</span>'+
+        '<span class="members which">'+ split[2] +'</span></div>';
+
+        
+    });
+</script>
+
+
+</html>
